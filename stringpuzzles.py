@@ -61,7 +61,7 @@ test("Yn", "PYnative")
 test("Ynf", "PYnative") """
 
 # 8
-str1 = "Welcome to USA. usa awesome, isn't it? uSA"
+""" str1 = "Welcome to USA. usa awesome, isn't it? uSA"
 str2 = "usa"
 count = 0
 for i in range(len(str1)-2):
@@ -69,4 +69,13 @@ for i in range(len(str1)-2):
         if str1[i+1].lower() == "s":
             if str1[i+2].lower() == "a":
                 count = count + 1
-print("The "+str2+" count is "+str(count))
+print("The "+str2+" count is "+str(count)) """
+
+# 9
+str1 = "PYnative29@#8496"
+count = 0; runtot = 0
+for i in str1:
+    if i.isdigit():
+        runtot += int(i)
+        count = count + 1
+print("Sum is "+str(runtot)+". Average is "+str(runtot/count))
