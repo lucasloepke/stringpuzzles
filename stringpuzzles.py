@@ -49,7 +49,7 @@ for i in range(length):
 print(s3) """
 
 # 7
-def test(s1, s2):
+""" def test(s1, s2):
     check = True
     for i in s1:
         if not s2.__contains__(i):
@@ -58,4 +58,15 @@ def test(s1, s2):
             return
     print(s1+" and "+s2+" are balanced")
 test("Yn", "PYnative")
-test("Ynf", "PYnative")
+test("Ynf", "PYnative") """
+
+# 8
+str1 = "Welcome to USA. usa awesome, isn't it? uSA"
+str2 = "usa"
+count = 0
+for i in range(len(str1)-2):
+    if str1[i].lower() == "u":
+        if str1[i+1].lower() == "s":
+            if str1[i+2].lower() == "a":
+                count = count + 1
+print("The "+str2+" count is "+str(count))
