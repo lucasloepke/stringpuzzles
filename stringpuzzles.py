@@ -27,3 +27,15 @@ for i in word:
 print(newstr) """
 
 # 5
+str1 = "P@#yn26at^&i5ve"
+chars = 0; digits = 0; symbols = 0
+for i in str1:
+    if i.isalpha():
+        chars = chars + 1
+    elif i.isdigit():
+        digits = digits + 1
+    else:
+        symbols = symbols + 1
+print("Chars: "+str(chars))
+print("Digits: "+str(digits))
+print("Symbols: "+str(symbols))
