@@ -36,6 +36,4 @@ for i in str1:
         digits = digits + 1
     else:
         symbols = symbols + 1
-print("Chars: "+str(chars))
-print("Digits: "+str(digits))
-print("Symbols: "+str(symbols))
+print("Chars: "+str(chars) + "\nDigits: "+str(digits) + "\nSymbols: "+str(symbols))
