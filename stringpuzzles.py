@@ -38,7 +38,7 @@ for i in str1:
 print("Chars: "+str(chars) + "\nDigits: "+str(digits) + "\nSymbols: "+str(symbols)) """
 
 # 6
-s1 = "Abc"; s2 = "Xyz"; s3 = ""
+""" s1 = "Abc"; s2 = "Xyz"; s3 = ""
 length = len(s1) if len(s1) > len(s2) else len(s2)
 s2 = s2[::-1]
 for i in range(length):
@@ -46,4 +46,16 @@ for i in range(length):
         s3 = s3 + s1[i]
     if i < len(s2):
         s3 = s3 + s2[i]
-print(s3)
+print(s3) """
+
+# 7
+def test(s1, s2):
+    check = True
+    for i in s1:
+        if not s2.__contains__(i):
+            check = False
+            print(s1+" and "+s2+" are not balanced")
+            return
+    print(s1+" and "+s2+" are balanced")
+test("Yn", "PYnative")
+test("Ynf", "PYnative")
