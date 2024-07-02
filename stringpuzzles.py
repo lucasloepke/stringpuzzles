@@ -15,3 +15,15 @@ mid = int(len(str1)/2)
 print("Posit this! " + str1[:mid] + str2 + str1[mid:] + " and " + str1[:1] + str2[:1] + str1[mid] + str2[int(len(str2)/2)] + str1[-1:] + str2[-1:]) """
 
 # 4
+""" word = input("Enter a word: ")
+index = 0
+newstr = ""
+for i in word:
+    if i.islower():
+        newstr = newstr + i
+for i in word:
+    if i.isupper():
+        newstr = newstr + i
+print(newstr) """
+
+# 5
