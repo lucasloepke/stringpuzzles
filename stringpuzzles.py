@@ -16,7 +16,6 @@ print("Posit this! " + str1[:mid] + str2 + str1[mid:] + " and " + str1[:1] + str
 
 # 4
 """ word = input("Enter a word: ")
-index = 0
 newstr = ""
 for i in word:
     if i.islower():
@@ -27,7 +26,7 @@ for i in word:
 print(newstr) """
 
 # 5
-str1 = "P@#yn26at^&i5ve"
+""" str1 = "P@#yn26at^&i5ve"
 chars = 0; digits = 0; symbols = 0
 for i in str1:
     if i.isalpha():
@@ -36,4 +35,15 @@ for i in str1:
         digits = digits + 1
     else:
         symbols = symbols + 1
-print("Chars: "+str(chars) + "\nDigits: "+str(digits) + "\nSymbols: "+str(symbols))
+print("Chars: "+str(chars) + "\nDigits: "+str(digits) + "\nSymbols: "+str(symbols)) """
+
+# 6
+s1 = "Abc"; s2 = "Xyz"; s3 = ""
+length = len(s1) if len(s1) > len(s2) else len(s2)
+s2 = s2[::-1]
+for i in range(length):
+    if i < len(s1):
+        s3 = s3 + s1[i]
+    if i < len(s2):
+        s3 = s3 + s2[i]
+print(s3)
