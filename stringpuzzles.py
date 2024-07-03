@@ -72,10 +72,18 @@ for i in range(len(str1)-2):
 print("The "+str2+" count is "+str(count)) """
 
 # 9
-str1 = "PYnative29@#8496"
+""" str1 = "PYnative29@#8496"
 count = 0; runtot = 0
 for i in str1:
     if i.isdigit():
         runtot += int(i)
         count = count + 1
-print("Sum is "+str(runtot)+". Average is "+str(runtot/count))
+print("Sum is "+str(runtot)+". Average is "+str(runtot/count)) """
+
+# 10
+str1 = "Apple"
+dict = {}
+for i in str1:
+    count = str1.count(i)
+    dict[i] = count
+print(dict)
