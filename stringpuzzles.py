@@ -81,9 +81,25 @@ for i in str1:
 print("Sum is "+str(runtot)+". Average is "+str(runtot/count)) """
 
 # 10
-str1 = "Apple"
+""" str1 = "Apple"
 dict = {}
 for i in str1:
     count = str1.count(i)
     dict[i] = count
-print(dict)
+print(dict) """
+
+# 11
+""" str1 = "PYnative"
+print(str1[::-1]) """
+
+# 12
+""" str1 = "Emma is a data scientist who knows Python. Emma works at google."
+print(str1.rindex("Emma")) """
+
+# 13
+""" str1 = "Emma-is-a-data-scientist"
+print(str1.replace('-', '\n')) """
+
+# 14
+str1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+print(list(filter(None, str1)))
