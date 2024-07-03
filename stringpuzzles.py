@@ -101,5 +101,12 @@ print(str1.rindex("Emma")) """
 print(str1.replace('-', '\n')) """
 
 # 14
-str1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
-print(list(filter(None, str1)))
+""" str1 = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
+print(list(filter(None, str1))) """
+
+# 15
+import re
+str1 = "/*Jon is @developer & musician"; str2 = ""
+str1 = re.sub(r'[^a-zA-Z\s]', '', str1)
+str1 = re.sub(r' +', ' ', str1)
+print(str1)
