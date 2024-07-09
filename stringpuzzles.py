@@ -125,7 +125,10 @@ alpha = [False if i.isalpha() else True for i in elements]
 print(list(compress(elements, alpha))) """
 
 # 18
-import re
+""" import re
 str1 = '/*Jon is @developer & musician!!'
 str1 = re.sub(r'[^a-zA-Z\s]', '#', str1)
-print(str1)
+print(str1) """
+
+# To be added:
+# Python equivalent of switch statement to choose which problem to run view.
