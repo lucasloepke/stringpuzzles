@@ -105,8 +105,27 @@ print(str1.replace('-', '\n')) """
 print(list(filter(None, str1))) """
 
 # 15
-import re
+""" import re
 str1 = "/*Jon is @developer & musician"; str2 = ""
 str1 = re.sub(r'[^a-zA-Z\s]', '', str1)
 str1 = re.sub(r' +', ' ', str1)
+print(str1) """
+
+# 16
+""" import re
+str1 = 'I am 25 years and 10 months old'
+str1 = re.sub(r'[\D]', '', str1)
+print(str1) """
+
+# 17
+""" from itertools import compress
+str1 = "Emma25 is Data scientist50 and AI Expert"
+elements = str1.split(sep=' ')
+alpha = [False if i.isalpha() else True for i in elements]
+print(list(compress(elements, alpha))) """
+
+# 18
+import re
+str1 = '/*Jon is @developer & musician!!'
+str1 = re.sub(r'[^a-zA-Z\s]', '#', str1)
 print(str1)
